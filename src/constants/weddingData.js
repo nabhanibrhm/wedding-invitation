@@ -1,3 +1,5 @@
+import coverFlowerImage from "../assets/images/coverFlower.png";
+
 export const weddingData = {
   groom: {
     name: "Adam Maulana",
@@ -58,6 +60,7 @@ export const weddingData = {
     },
   ],
   assets: {
+    coverFlower: coverFlowerImage,
     heroBackground:
       "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80",
     flowerPetal:
