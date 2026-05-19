@@ -25,10 +25,6 @@ defineProps({
     type: String,
     required: true,
   },
-  backgroundImage: {
-    type: String,
-    required: true,
-  },
 });
 
 const emit = defineEmits(["open"]);
@@ -60,19 +56,15 @@ onBeforeUnmount(() => {
   <Modal
     :class-name="`fixed inset-0 z-50 flex items-center justify-center transition-transform duration-1000 ease-in-out ${isOpen ? '-translate-y-full' : 'translate-y-0'}`"
   >
-    <div ref="coverRoot" class="absolute inset-0 mx-auto h-full w-full max-w-[480px] overflow-hidden">
-      <img :src="backgroundImage" alt="Cover Background" class="h-full w-full object-cover" />
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,244,229,0.08),_rgba(32,18,12,0.62)_60%,_rgba(14,8,6,0.76)_100%)]" />
-      <div class="absolute inset-0 bg-gradient-to-b from-[#f3ddc0]/20 via-black/20 to-[#1f120d]/58" />
-
-      <div class="absolute inset-0 z-30 flex flex-col items-center justify-center p-8 text-center text-white animate-fade-up">
+    <div ref="coverRoot" class="absolute inset-0 mx-auto h-full w-full max-w-[480px] overflow-hidden bg-[#F7F5F0]">
+      <div class="absolute inset-0 z-30 flex flex-col items-center justify-center p-8 text-center text-[#4A4A4A] animate-fade-up">
         <p class="mb-4 text-sm uppercase tracking-[0.45em] opacity-80">The Wedding Of</p>
-        <h1 class="font-cursive text-6xl text-[#E8DCC4] drop-shadow-md md:text-7xl">
+        <h1 class="font-cursive text-6xl text-[#8C7A6B] md:text-7xl">
           {{ bride.nickname }} <br />
           & <br />
           {{ groom.nickname }}
         </h1>
-        <p class="mt-8 border-y border-white/30 py-2 text-lg font-light tracking-wider">
+        <p class="mt-8 border-y border-[#8C7A6B]/30 py-2 text-lg font-light tracking-wider">
           {{ dateText }}
         </p>
 

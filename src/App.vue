@@ -108,7 +108,6 @@ onBeforeUnmount(() => {
         :bride="weddingData.bride"
         :groom="weddingData.groom"
         :date-text="weddingData.event.dateText"
-        :background-image="weddingData.assets.coverBackground"
         @open="handleOpenInvitation"
       />
 

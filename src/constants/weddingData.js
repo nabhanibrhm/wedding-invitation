@@ -1,5 +1,3 @@
-import coverBackgroundImage from "../assets/images/cover-background.webp";
-
 export const weddingData = {
   groom: {
     name: "Adam Maulana",
@@ -60,7 +58,6 @@ export const weddingData = {
     },
   ],
   assets: {
-    coverBackground: coverBackgroundImage,
     heroBackground:
       "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80",
     flowerPetal:
